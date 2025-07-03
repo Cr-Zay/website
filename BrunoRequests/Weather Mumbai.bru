@@ -1,0 +1,17 @@
+meta {
+  name: Weather Mumbai
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://api.openweathermap.org/data/2.5/weather?lat=19.054999&lon=72.8692035&appid=f30604d8cef44999d18051c695886836
+  body: none
+  auth: inherit
+}
+
+params:query {
+  lat: 19.054999
+  lon: 72.8692035
+  appid: f30604d8cef44999d18051c695886836
+}
