@@ -1,0 +1,22 @@
+*{
+    font-family: Helvetica, Arial, sans-serif;
+}
+#cityInput{
+    border: 3px solid black;
+    border-radius: 8px;
+}
+#go{
+    border: 3px solid black;
+    padding: 1px 20px ;
+    border-radius: 8px;
+}
+#inputDiv{
+    margin-bottom: 20px;
+}
+#go:active{
+    background-color: cadetblue;
+}
+#map {
+    height: 400px;
+    width: 100%;
+}

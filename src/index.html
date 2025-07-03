@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cities</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <h1>Enter a city:</h1>
+        <div id ="inputDiv">
+            <input type="text" id="cityInput">
+            <button id="go" onclick="buttonClick()">Go</button>
+        </div>
+        <script>
+            var input = document.getElementById("cityInput");
+
+            input.addEventListener("keypress", function (event) {
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    document.getElementById("go").click();
+                }
+            });
+        </script>
+        <div id="map"></div>
+        <p id="result"></p>
+        <p id="weather"></p>
+        <p id="temp"></p>
+        <p id="feelsLike"></p>
+        <p id="humidity"></p>
+
+    </body>
+</html>
